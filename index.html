@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Showcase</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./product.html">Products</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero" id="home">
+    <div class="content">
+        <h1 class="landing-page">Introducing EcoGreenFX <img src="./logo ecogreenfx.jpg" alt="ecogreenfx-logo"></h1>
+        <p>EcoGreenFX is an innovative solution designed to address crude oil sludge contamination in soils through a synergistic approach involving co-planting and microbial bioremediation. Developed as part of a UKaid-sponsored Innovation to Market (I2M) program, 
+            EcoGreenFX integrates sustainable agricultural practices with environmental remediation techniques to restore soil health and enhance food security...
+        </p>
+        <a href="./about.html#learn-more" class="cta-button">Learn More</a>
+      </div>
+  </header>
+
+  <footer class="index-footer">
+    <div class="footer-logo">
+      <img src="./logo ecogreenfx.jpg" alt="Product Logo">
+    </div>
+    <p class="footer-txt">&copy; 2024 EcoGreenFX. All rights reserved.</p>
+  </footer>
+  <script>
+    const watermarks = [
+        './ecogreen.jpg',
+        './earth-green.jpg',
+        './ecogreen3.jpg',
+];
+
+let currentIndex = 0;
+
+// Function to change the background image
+function changeWatermark() {
+  document.body.style.backgroundImage = `url('${watermarks[currentIndex]}')`;
+  currentIndex = (currentIndex + 1) % watermarks.length; // Loop through images
+}
+
+// Set interval to change the image every 2 seconds
+setInterval(changeWatermark, 10000);
+
+// Initial call to set the first watermark
+changeWatermark();
+  </script>
+</body>
+</html>
